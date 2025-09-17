@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+h1 {
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/*  Part 1: Button Hover Effect */
+.animated-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.animated-btn:hover {
+  transform: scale(1.1);
+}
+
+/*  Part 1: Fade Animation */
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #f39c12;
+  margin-top: 10px;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/*  Part 1: Keyframe Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate {
+  animation: slideIn 1s forwards;
+}
